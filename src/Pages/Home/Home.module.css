@@ -1,0 +1,266 @@
+* {
+  font-style: sans-serif;
+}
+.taskContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.task {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.taskCard {
+  list-style: none;
+  width: 100%;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  background-color: rgb(49, 119, 211);
+  color: white;
+  padding: 2px 0px;
+}
+.taskCard:hover {
+  color: white;
+  background-color: crimson;
+}
+.taskCardWidth {
+  width: 120px;
+}
+
+.material-symbols-outlined {
+  border-color: red;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.taskHeader {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.taskHeading {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  width: 60px;
+}
+
+#TaskContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+}
+
+.main {
+  width: 400px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+}
+.TaskForm {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  color: rgb(19, 99, 223);
+  font-size: 2.3em;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  width: 40%;
+  border: 1px solid rgb(205, 203, 203);
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: rgb(19, 99, 223);
+  color: white;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(49, 119, 211);
+}
+
+.link {
+  color: rgb(83, 127, 212);
+}
+
+.cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  border: 1px solid gray;
+  padding: 7px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 280px) and (max-width: 440px) {
+  .taskContainer {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .task {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .taskCard {
+    list-style: none;
+    width: 100%;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    background-color: rgb(49, 119, 211);
+    color: white;
+    padding: 2px 0px;
+    font-size: 15px;
+  }
+  .icon {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .taskHeader {
+    font-size: 12px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .task {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+  }
+  .taskCard {
+    list-style: none;
+    width: 100%;
+    height: 50;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    background-color: rgb(49, 119, 211);
+    color: white;
+    padding: 2px 0px;
+    font-size: 1rem;
+  }
+  .taskHeader {
+    font-size: 11px;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1px;
+    font-size: 1rem;
+  }
+}
