@@ -32,7 +32,7 @@ export function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8086/login", user)
+      .post("https://enigmatic-refuge-83934.herokuapp.com/login", user)
       .then((res) => {
         if (!res.data.token) {
           dispatch(loginFail());
@@ -55,7 +55,7 @@ export function Login() {
     <div id={style.loginContainer}>
       <div className={style.main}>
         <form className={style.loginForm} onSubmit={handleSubmit}>
-          <label>SIGNUP</label>
+          <label>LOGIN</label>
 
           <StyledTextFeild
             id={style.loginEmail}

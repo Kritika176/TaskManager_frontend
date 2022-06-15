@@ -33,7 +33,7 @@ export function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8086/signup", user)
+      .post("https://enigmatic-refuge-83934.herokuapp.com/signup", user)
       .then((res) => {
         if (res.data.errors) {
           setError({

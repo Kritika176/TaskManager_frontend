@@ -57,7 +57,7 @@ export function Home() {
 
   const deleteFun = (_id) => {
     axios
-      .delete(`http://localhost:8086/task/${_id}`)
+      .delete(`https://enigmatic-refuge-83934.herokuapp.com/task/${_id}`)
       .then((res) => dispatch(taskFunction(info.userId)))
       .catch((err) => console.log(err.message));
   };
@@ -75,7 +75,7 @@ export function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .patch(`http://localhost:8086/task/${taskId}`, formData)
+      .patch(`https://enigmatic-refuge-83934.herokuapp.com/task/${taskId}`, formData)
       .then((res) => {
         dispatch(taskFunction(info.userId));
         setShow(false);

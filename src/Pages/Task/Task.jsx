@@ -47,7 +47,7 @@ export const Task = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8086/task", taskData)
+      .post("https://enigmatic-refuge-83934.herokuapp.com/task", taskData)
       .then((res) => {
         navigate("/");
         setTaskData({
